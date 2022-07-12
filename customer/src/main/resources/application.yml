@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${db.url:jdbc:mariadb://localhost:3306/ssayossaserver}
+    username: ${db.username:root}
+    password: ${db.password:1234}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQL8Dialect
+      javax:
+        persistence:
+          validation:
+            mode: none
+    show-sql: true
+  flyway:
+    enabled: true

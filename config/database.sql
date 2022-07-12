@@ -1,0 +1,2 @@
+CREATE SCHEMA IF NOT EXISTS testserver;
+CREATE SCHEMA IF NOT EXISTS testservertest;

@@ -1,0 +1,10 @@
+services:
+  testserver-mariadb:
+    image: mariadb
+    container_name: testserver-mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: 1234
+    volumes:
+      - ./config/:/docker-entrypoint-initdb.d/
+    ports:
+      - 3306:3306

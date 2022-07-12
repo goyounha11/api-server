@@ -1,0 +1,6 @@
+rootProject.name = 'ssayossa-api-server'
+include 'common'
+include 'customer'
+include 'shop'
+include 'core'
+
